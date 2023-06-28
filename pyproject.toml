@@ -8,6 +8,7 @@ packages = [{include = "ginconfig_base"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+pandas = "^2.0.2"
 
 
 [build-system]
