@@ -1,4 +1,25 @@
 [[package]]
+name = "gin-config"
+version = "0.5.0"
+description = "Gin-Config: A lightweight configuration library for Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+pytorch-nightly = ["pytorch-nightly"]
+tensorflow = ["tensorflow (>=1.13.0)"]
+tensorflow-gpu = ["tensorflow-gpu (>=1.13.0)"]
+testing = ["absl-py (>=0.1.6)", "mock (>=3.0.5)", "nose"]
+tf-nightly = ["tf-nightly"]
+torch = ["torch (>=1.3.0)"]
+
+[package.source]
+type = "legacy"
+url = "https://europe-west4-python.pkg.dev/mol-data-ml-org/pypi-mirror-prod/simple"
+reference = "mollie-pypi-mirror-prod"
+
+[[package]]
 name = "numpy"
 version = "1.25.0"
 description = "Fundamental package for array computing in Python"
@@ -115,9 +136,13 @@ reference = "mollie-pypi-mirror-prod"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "e9c94a79f31131a490f084deaa1e8926fea35691ca146b7117177bb03eab6ff9"
+content-hash = "d16393dd5e2d58ba53edcc887dfb96c0b9c75961735f31c007ad8489887b1177"
 
 [metadata.files]
+gin-config = [
+    {file = "gin-config-0.5.0.tar.gz", hash = "sha256:0c6ea5026ded927c8c93c990b01c695257c1df446e45e549a158cfbc79e19ed6"},
+    {file = "gin_config-0.5.0-py3-none-any.whl", hash = "sha256:bddb7ca221ea2b46cdb59321e79fecf02d6e3b728906047fcd4076c297609fd6"},
+]
 numpy = [
     {file = "numpy-1.25.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:8aa130c3042052d656751df5e81f6d61edff3e289b5994edcf77f54118a8d9f4"},
     {file = "numpy-1.25.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:9e3f2b96e3b63c978bc29daaa3700c028fe3f049ea3031b58aa33fe2a5809d24"},
