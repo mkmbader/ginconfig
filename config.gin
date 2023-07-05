@@ -1,2 +1,18 @@
 hello_world.name = 'Mary'
 hello_world.loc = 'at home'
+
+function2.name = 'Mary'
+function2.func_random = @random_value
+
+
+
+gary/function3.func_random3 = @gary/random.uniform
+gary/function3.name = 'Gary'
+gary/random.uniform.a= 1
+gary/random.uniform.b = 2
+
+mary/function3.func_random3 = @random.uniform
+mary/function3.name = 'Mary'
+mary/random.uniform.a= 0
+mary/random.uniform.b = 1
+
