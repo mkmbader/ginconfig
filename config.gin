@@ -1,18 +1,13 @@
-hello_world.name = 'Mary'
-hello_world.loc = 'at home'
+food = 'chocolate icecream'
 
-function2.name = 'Mary'
-function2.func_random = @random_value
+maria/function.name = 'Maria'
+maria/function.food = %food
+maria/function.price = @random.uniform()
+maria/random.uniform.a = 0
+maria/random.uniform.b = 1
 
-
-
-gary/function3.func_random3 = @gary/random.uniform
-gary/function3.name = 'Gary'
-gary/random.uniform.a= 1
-gary/random.uniform.b = 2
-
-mary/function3.func_random3 = @random.uniform
-mary/function3.name = 'Mary'
-mary/random.uniform.a= 0
-mary/random.uniform.b = 1
-
+ana/function.name = 'Ana'
+ana/function.food = %food
+ana/function.price = @random.uniform()
+ana/random.uniform.a = 0
+ana/random.uniform.b = 3

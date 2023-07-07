@@ -1,23 +1,17 @@
-import pandas as pd
-import gin #pylint:disable=import-error
-# from pydantic import StrictStr  # pylint: disable=no-name-in-module
-# type hinting: https://stackoverflow.com/questions/2489669/how-do-python-functions-handle-the-types-of-parameters-that-you-pass-in
+import gin
+import random
 
-
-@gin.configurable
-def hello_world(name:str, loc:str=gin.REQUIRED):
-    print('Hello %s, %s' %(name, loc))
+@gin.configurable()
+def function(name = gin.REQUIRED, food = gin.REQUIRED, price = gin.REQUIRED):
+    '''print favorite food'''
+    print('%s likes %s, if cheaper than %s euro.' %(name, food, round(price,2)))
     return
 
 
-if __name__ == '__main__':
+gin.external_configurable(random.uniform)
 
-    gin.enter_interactive_mode() 
+if __name__ == '__main__':
     gin.parse_config_file('config.gin')
 
-    #no config used -> I can force these values
-    hello_world('world', 'around')
-    hello_world(17, 13)
-
-    # this uses the config values
-    hello_world()
+    with gin.config_scope('maria'): function()
+    with gin.config_scope('ana'): function()
