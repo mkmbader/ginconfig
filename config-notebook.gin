@@ -1,0 +1,29 @@
+hello_world.name = 'Mary'
+hello_world.loc = 'at home'
+
+function2.name = 'Mary'
+function2.func_random = @random_value
+
+
+# reuse the same function
+gary/function3.func_random3 = @gary/random.uniform
+gary/function3.name = 'Gary'
+gary/random.uniform.a= 1
+gary/random.uniform.b = 2
+
+mary/function3.func_random3 = @random.uniform
+mary/function3.name = 'Mary'
+mary/random.uniform.a= 0
+mary/random.uniform.b = 1
+
+# macro use
+name = 'lary'
+lary/function3.func_random3 = @random.uniform
+lary/function3.name=%name
+lary/random.uniform.a= 5
+lary/random.uniform.b = 6
+
+wary/function3.func_random3 = @random.uniform
+wary/function3.name=%name
+wary/random.uniform.a= 5
+wary/random.uniform.b = 6
