@@ -1,7 +1,7 @@
 # ginconfig
 
-In this project I explore three concepts
-* setting up my own poetry environment
+In this project I explore three concepts:
+* Setting up my own poetry environment, a step-by-step guide can be found [here](https://pinto-club-076.notion.site/Maria-Bader-Ph-D-174b42a80bb84d779598643257ffcbf0?p=b89c6f7ab12c41e391baf56805be975a&pm=c).
 * Exploring the gin-config configuration framework
 * using cli-typer to run the code
 
